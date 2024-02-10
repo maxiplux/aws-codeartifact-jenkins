@@ -34,6 +34,14 @@
 		</dependency>
 	</dependencies>
 
+	<distributionManagement>
+		<repository>
+			<id>boottech-mvn-code-repository</id>
+			<name>boottech-mvn-code-repository</name>
+			<url>https://boottech-245866498970.d.codeartifact.us-east-2.amazonaws.com/maven/mvn-code-repository/</url>
+		</repository>
+	</distributionManagement>
+
 	<build>
 		<plugins>
 			<plugin>
