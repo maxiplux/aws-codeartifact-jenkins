@@ -92,7 +92,7 @@ pipeline {
 
                     withAWS(credentials: 'AWS_IAM_CREDENTIALS', region: 'us-east-1') {
                         script {
-                            env.CODEARTIFACT_AUTH_TOKEN = sh (script: 'aws codeartifact get-authorization-token --domain boottech --domain-owner $env.AWS_ACCOUNT_ID --region us-east-2 --query authorizationToken --output text',returnStdout: true).trim()
+                            env.CODEARTIFACT_AUTH_TOKEN = sh (script: 'aws codeartifact get-authorization-token --domain boottech --domain-owner ${env.AWS_ACCOUNT_ID} --region us-east-2 --query authorizationToken --output text',returnStdout: true).trim()
                         }
 
                         withMaven(maven: 'MAVEN_ENV') {
