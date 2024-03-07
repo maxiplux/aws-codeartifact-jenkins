@@ -34,13 +34,15 @@
 		</dependency>
 	</dependencies>
 
+	 
+
 	<distributionManagement>
-		<repository>
-			<id>boottech-mvn-code-repository</id>
-			<name>boottech-mvn-code-repository</name>
-			<url>${env.AWS_ARTIFACT_REPOSITORY_URL}/maven/mvn-code-repository/</url>
-		</repository>
-	</distributionManagement>
+  <repository>
+    <id>maxiplux-mvn-code-repository</id>
+    <name>maxiplux-mvn-code-repository</name>
+    <url>https://maxiplux-912545771260.d.codeartifact.us-east-1.amazonaws.com/maven/mvn-code-repository/</url>
+  </repository>
+</distributionManagement>
 
 
 
